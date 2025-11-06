@@ -1,11 +1,104 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>Benvenuto nel mio sito</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Benvenuto nella Community Informatica</title>
+  <meta name="description" content="Benvenuto nella community informatica — lezioni e codici per imparare a programmare." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+  <style>
+    :root {--bg: #0b0f1a; --accent: #7c3aed; --muted: #9aa4b2;}
+    * {box-sizing: border-box;}
+    body {margin: 0; font-family: 'Inter', sans-serif; background: radial-gradient(circle at top left, #1a1f3b, #0b0f1a); color: #e6eef6; overflow-x: hidden;}
+    header {text-align: center; padding: 50px 20px;}
+    h1 {font-size: 2.4rem; color: var(--accent); margin-bottom: 10px;}
+    p.lead {color: var(--muted); font-size: 1.1rem;}
+
+    .code-bg {position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.1; overflow: hidden; font-family: monospace; white-space: pre; color: #7dd3fc; z-index: 0; animation: scroll 40s linear infinite;}
+    @keyframes scroll {from {transform: translateY(0);} to {transform: translateY(-50%);}}
+
+    main {position: relative; z-index: 1; max-width: 800px; margin: auto; padding: 20px;}
+    section.lesson {background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; margin-bottom: 20px;}
+    h2 {color: var(--accent);}
+    pre {background: #020617; padding: 15px; border-radius: 8px; overflow-x: auto;}
+
+    .social {text-align: center; margin: 20px 0; font-size: 1.1rem; color: var(--accent);}
+
+    footer {text-align: center; color: var(--muted); padding: 20px; margin-top: 40px;}
+  </style>
 </head>
 <body>
-  <h1>Ciao, benvenuto nel mio sito!</h1>
-  <p>Questo è il mio primo file HTML su GitHub Pages.</p>
+  <div class="code-bg">
+// Benvenuto nella community!
+for(let i=0;i<5;i++){
+  console.log('Lezione ' + (i+1) + ' pronta!');
+}
+function learn(){
+  console.log('Impara, prova e condividi!');
+}
+learn();
+# Esempio Python
+for i in range(5):
+    print(f'Lezione {i+1}')
+  </div>
+
+  <header>
+    <h1>👩‍💻 Benvenuto nella Community Informatica 👨‍💻</h1>
+    <p class="lead">Scopri alcune lezioni per iniziare a programmare e unisciti a noi!</p>
+  </header>
+
+  <main>
+    <section class="lesson">
+      <h2>Lezione 1 — HTML base</h2>
+      <p>Il primo passo: creare una semplice pagina web.</p>
+      <pre><code class="html">&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Ciao mondo!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+    <section class="lesson">
+      <h2>Lezione 2 — JavaScript Interattivo</h2>
+      <p>Rendi la tua pagina interattiva con uno script semplice:</p>
+      <pre><code class="javascript">alert('Benvenuto nella community!');
+document.body.style.backgroundColor = '#111';</code></pre>
+    </section>
+
+    <section class="lesson">
+      <h2>Lezione 3 — Python base</h2>
+      <p>Stampare un messaggio è facilissimo in Python:</p>
+      <pre><code class="python">print('Ciao, community!')
+for i in range(3):
+    print(f'Lezione {i+1} completa!')</code></pre>
+    </section>
+
+    <section class="lesson">
+      <h2>Lezione 4 — CSS semplice</h2>
+      <p>Aggiungi stile alla tua pagina:</p>
+      <pre><code class="css">body {
+  background-color: #0b0f1a;
+  color: #e6eef6;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: #7c3aed;
+}</code></pre>
+    </section>
+
+    <div class="social">
+      🔹 Seguimi & lascia un like! 🔹
+    </div>
+  </main>
+
+  <footer>
+    <p>🌐 Entra nella nostra community e continua a imparare!</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </body>
 </html>
